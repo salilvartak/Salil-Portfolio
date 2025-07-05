@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import BlurText from "./BlurText";
+import FadeContent from './ui/FadeContent'
 type Skill = {
   name: string;
   logo: string; // URL or local path to logo
@@ -22,6 +23,7 @@ const handleAnimationComplete = () => {
 
 const SkillsCard = () => {
   return (
+    <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
     <section id="skills" className="py-8 max-w-6xl mx-auto ">
       <div className="flex justify-center">
           <BlurText
@@ -51,6 +53,7 @@ const SkillsCard = () => {
         ))}
       </div>
     </section>
+    </FadeContent>
   );
 };
 

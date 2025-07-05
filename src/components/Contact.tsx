@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 import { Mail, Github, Linkedin } from 'lucide-react';
 import emailjs from '@emailjs/browser';
 import BlurText from "./BlurText";
+import FadeContent from './ui/FadeContent'
 
 const handleAnimationComplete = () => {
   console.log('Animation completed!');
@@ -38,6 +39,7 @@ const handleSubmit = (e: React.FormEvent) => {
   };
 
   return (
+    <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
     <section className="py-20 px-4 relative" id="contact">
       <div className="max-w-4xl mx-auto">
         <div className="flex justify-center">
@@ -154,6 +156,7 @@ const handleSubmit = (e: React.FormEvent) => {
         </div>
       </div>
     </section>
+    </FadeContent>
   );
 };
 

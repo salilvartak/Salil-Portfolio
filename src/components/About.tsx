@@ -3,6 +3,7 @@ import React from 'react';
 import { Code, Lightbulb, Rocket,FileUser } from 'lucide-react';
 import ResumeButton  from '@/components/ui/ResumeButton';
 import BlurText from "./BlurText";
+import FadeContent from './ui/FadeContent'
 
 const handleAnimationComplete = () => {
   console.log('Animation completed!');
@@ -11,6 +12,7 @@ const handleAnimationComplete = () => {
 
 const About = () => {
   return (
+    <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
     <section className="py-20 px-4 relative" id="about">
       <div className="max-w-6xl mx-auto">
         <div className="flex justify-center">
@@ -77,6 +79,7 @@ const About = () => {
         
       </div>
     </section>
+    </FadeContent>
   );
 };
 
