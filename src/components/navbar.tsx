@@ -43,7 +43,7 @@ const Navbar = () => {
           <li>
             <a
               href="#home"
-              className="block text-white text-3xl font-semibold hover:text-blue-200 transition-colors"
+              className="block text-white text-3xl font-semibold hover:text-blue-200  hover:translate-x-2 transition-transform duration-300"
               onClick={toggleNavbar}
             >
               Home
@@ -52,7 +52,7 @@ const Navbar = () => {
           <li>
             <a
               href="#about"
-              className="block text-white text-3xl font-semibold hover:text-blue-200 transition-colors"
+              className="block text-white text-3xl font-semibold hover:text-blue-200 hover:translate-x-2 transition-transform duration-300"
               onClick={toggleNavbar}
             >
               About
@@ -61,7 +61,7 @@ const Navbar = () => {
           <li>
             <a
               href="#skills"
-              className="block text-white text-3xl font-semibold hover:text-blue-200 transition-colors"
+              className="block text-white text-3xl font-semibold hover:text-blue-200 hover:translate-x-2 transition-transform duration-300"
               onClick={toggleNavbar}
             >
               Skills
@@ -70,7 +70,7 @@ const Navbar = () => {
           <li>
             <a
               href="#projects"
-              className="block text-white text-3xl font-semibold hover:text-blue-200 transition-colors"
+              className="block text-white text-3xl font-semibold hover:text-blue-200 hover:translate-x-2 transition-transform duration-300"
               onClick={toggleNavbar}
             >
               Projects
@@ -79,7 +79,7 @@ const Navbar = () => {
           <li>
             <a
               href="#contact"
-              className="block text-white text-3xl font-semibold hover:text-blue-200 transition-colors"
+              className="block text-white text-3xl font-semibold hover:text-blue-200 hover:translate-x-2 transition-transform duration-300"
               onClick={toggleNavbar}
             >
               Contact

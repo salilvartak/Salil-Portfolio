@@ -30,15 +30,14 @@ const About = () => {
           <div className="space-y-6">
             <div className="text-lg text-gray-300 leading-relaxed space-y-4">
               <p>
-                I'm a passionate software developer who thrives on building innovative solutions 
-                that make a real difference. With a deep love for clean code and creative problem-solving, 
-                I transform complex challenges into elegant, user-friendly applications.
+                I’m a dedicated software developer with a passion for building impactful and innovative solutions. 
+                I take pride in writing clean, maintainable code and thrive on transforming complex challenges into intuitive, 
+                user-centric applications through thoughtful design and creative problem-solving.
               </p>
               <p>
-                My journey in tech is driven by an insatiable curiosity for learning new technologies 
-                and pushing the boundaries of what's possible. Whether it's crafting seamless user 
-                experiences or architecting robust backend systems, I approach every project with 
-                dedication and attention to detail.
+                My journey in tech is fueled by an insatiable curiosity to explore new technologies and continuously push the boundaries 
+                of what's possible. Whether it's designing seamless user experiences or architecting scalable backend systems, I bring a 
+                meticulous, detail-oriented approach to every project.
               </p>
               <ResumeButton />
             </div>
