@@ -34,15 +34,7 @@ const Projects = () => {
       codeLink: 'https://github.com/salilvartak/Cgc-Job-Form',
       demoLink: 'https://i.ibb.co/7NTXktz2/Screenshot-2025-07-04-220052.png'
     },
-    {
-      title: 'CGC Job Form Website',
-      description: 'Modern, responsive web application for job applications with intuitive user interface and seamless form handling.',
-      tech: ['React', 'TypeScript', 'MongoDB', 'Firebase'],
-      image: '/assets/projects/CGC.png',
-      gradient: 'from-blue-400 to-black-100',
-      codeLink: 'https://github.com/salilvartak/Cgc-Job-Form',
-      demoLink: 'https://i.ibb.co/7NTXktz2/Screenshot-2025-07-04-220052.png'
-    }
+    
   ];
 
   return (
