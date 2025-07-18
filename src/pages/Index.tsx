@@ -4,9 +4,11 @@ import Hero from '../components/Hero';
 import About from '../components/About';
 import Skills from '../components/Skills';
 import Projects from '../components/Projects';
+import Blogs from '../components/Blogs';
 import Contact from '../components/Contact';
 import Navigation from '@/components/navbar';
 import Particles from '../components/ui/Particles.tsx';
+import ChatBot from '@/components/ChatbBot.tsx';
 
 const Index = () => {
   return (
@@ -37,8 +39,12 @@ const Index = () => {
       <Navigation />
       <Hero />
       <About />
+      <ChatBot />
       <Skills />
       <Projects />
+      <Blogs />
+
+      {/* Contact Section */}
       <Contact />
 
       {/* Footer */}

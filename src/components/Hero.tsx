@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { ChevronDown } from "lucide-react";
 
 const HeroVideoSection = () => {
   const [isMobile, setIsMobile] = useState(false);
@@ -22,9 +23,14 @@ const HeroVideoSection = () => {
         loop
         playsInline
       />
-      <div className="absolute inset-0 z-10" />
+      <div className="absolute inset-0 z-10 bg-black/40" />
       <div className="relative z-20 flex items-center justify-center h-full">
-        
+        {/* Add your center content here if needed */}
+      </div>
+
+      {/* Scroll Indicator */}
+      <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-30">
+        <ChevronDown className="animate-bounce w-6 h-6 text-white opacity-80" />
       </div>
     </section>
   );
