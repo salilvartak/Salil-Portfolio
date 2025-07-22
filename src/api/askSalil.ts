@@ -6,14 +6,14 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   const { message } = req.body;
 
   try {
-    const response = await fetch('https://api.deepseek.com/v1/chat/completions', {
+    const response = await fetch('https://api.fireworks.ai/inference/v1/chat/completions', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        Authorization: `Bearer ${process.env.DEEPSEEK_API_KEY}`,
+        Authorization: `Bearer ${process.env.FIREWORKS_API_KEY}`,
       },
       body: JSON.stringify({
-        model: 'deepseek-chat',
+        model: 'accounts/fireworks/models/deepseek-chat',
         messages: [
           {
             role: 'system',
@@ -30,8 +30,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
     if (!response.ok) {
       const err = await response.text();
-      console.error('DeepSeek error:', err);
-      return res.status(500).json({ error: 'DeepSeek API error', detail: err });
+      console.error('Fireworks (DeepSeek) error:', err);
+      return res.status(500).json({ error: 'Fireworks DeepSeek API error', detail: err });
     }
 
     const data = await response.json();
@@ -39,7 +39,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
     res.status(200).json({ reply });
   } catch (error) {
-    console.error('DeepSeek Fetch Error:', error);
-    res.status(500).json({ error: 'Failed to call DeepSeek API' });
+    console.error('Fireworks DeepSeek Fetch Error:', error);
+    res.status(500).json({ error: 'Failed to call Fireworks DeepSeek API' });
   }
 }

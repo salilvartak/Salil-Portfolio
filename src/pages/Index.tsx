@@ -8,7 +8,8 @@ import Blogs from '../components/Blogs';
 import Contact from '../components/Contact';
 import Navigation from '@/components/navbar';
 import Particles from '../components/ui/Particles.tsx';
-import ChatBot from '@/components/ChatbBot.tsx';
+import ChatBot from "@/components/ChatbBot"; // Or similar path
+
 
 const Index = () => {
   return (
@@ -39,7 +40,7 @@ const Index = () => {
       <Navigation />
       <Hero />
       <About />
-      <ChatBot />
+      
       <Skills />
       <Projects />
       <Blogs />

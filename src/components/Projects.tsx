@@ -34,6 +34,15 @@ const Projects = () => {
       codeLink: 'https://github.com/salilvartak/Cgc-Job-Form',
       demoLink: 'https://i.ibb.co/7NTXktz2/Screenshot-2025-07-04-220052.png'
     },
+    {
+      title: 'Shreya Enterprise',
+      description: 'Redesigned landing page for Shreya Enterprise to showcase their catalogue of products.',
+      tech: ['React', 'TypeScript', 'AWS'],
+      image: '/assets/projects/shreya.png',
+      gradient: 'from-blue-400 to-black-100',
+      codeLink: 'https://github.com/salilvartak/Shreya-Enterprise',
+      demoLink: 'https://shreyaentp.in/'
+    },
     
   ];
 
