@@ -5,6 +5,7 @@ import { doc, getDoc } from "firebase/firestore";
 import { db } from "../firebase";
 import FadeContent from '../components/ui/FadeContent';
 import BlurText from "../components/BlurText";
+import Particles from '../components/ui/Particles.tsx';
 
 interface BlogPost {
   id: string;
@@ -78,6 +79,28 @@ const BlogPostDetail = () => {
   };
 
   return (
+    <div className="bg-black text-white min-h-screen relative">
+    <div
+        style={{
+          position: 'fixed',
+          width: '100%',
+          height: '100vh',
+          top: 0,
+          left: 0,
+          zIndex: 0,
+        }}
+      >
+        <Particles
+          particleColors={['#89cce3', '#89cce3']}
+          particleCount={500}
+          particleSpread={10}
+          speed={0.1}
+          particleBaseSize={100}
+          moveParticlesOnHover={false}
+          alphaParticles={true}
+          disableRotation={false}
+        />
+      </div>
     <FadeContent blur={true} duration={1000} easing="ease-out" initialOpacity={0}>
       <section className="py-20 px-4 min-h-screen">
         <div className="max-w-4xl mx-auto bg-gray-800/50 rounded-xl p-8 shadow-lg">
@@ -121,6 +144,7 @@ const BlogPostDetail = () => {
         </div>
       </section>
     </FadeContent>
+    </div>
   );
 };
 
