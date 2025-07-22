@@ -78,6 +78,15 @@ const Navbar = () => {
           </li>
           <li>
             <a
+              href="#blogs"
+              className="block text-white text-3xl font-semibold hover:text-blue-200 hover:translate-x-2 transition-transform duration-300"
+              onClick={toggleNavbar}
+            >
+              Blogs
+            </a>
+          </li>
+          <li>
+            <a
               href="#contact"
               className="block text-white text-3xl font-semibold hover:text-blue-200 hover:translate-x-2 transition-transform duration-300"
               onClick={toggleNavbar}

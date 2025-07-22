@@ -1,27 +1,21 @@
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Index from "./pages/Index";
-import NotFound from "./pages/NotFound";
+// src/App.tsx (or main.tsx, depending on your routing setup)
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import IndexPage from './pages/Index'; // Assuming this is your main page with Blogs component
+import NotFoundPage from './pages/NotFound'; // Your 404 page
+import BlogPostDetail from './pages/BlogPostDetails'; // Import the new component
 
-const queryClient = new QueryClient();
-
-const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-          <Route path="*" element={<NotFound />} />
-        </Routes>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
-);
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<IndexPage />} />
+        {/* Add the new route for individual blog posts */}
+        <Route path="/blog/:id" element={<BlogPostDetail />} />
+        <Route path="*" element={<NotFoundPage />} /> {/* Catch-all for 404 */}
+      </Routes>
+    </Router>
+  );
+}
 
 export default App;
