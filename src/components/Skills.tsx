@@ -9,7 +9,7 @@ type Skill = {
 const skills: Skill[] = [
   { name: "React", logo: "/assets/logo/react.svg" },
   { name: "Flutter", logo: "/assets/logo/flutter.png" },
-  { name: "Git", logo: "/assets/logo/git.png" },
+  { name: "Javascript", logo: "/assets/logo/js.svg" },
   { name: "Firebase", logo: "/assets/logo/firebase.png" },
   { name: "TailwindCSS", logo: "/assets/logo/tailwind.svg" },
   { name: "TypeScript", logo: "/assets/logo/typescript.webp" },
